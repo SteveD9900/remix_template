@@ -10,16 +10,13 @@ declare module "@remix-run/node" {
 
 export default defineConfig({
   plugins: [
-    remix({
-      ssr: false,
-      future: {
-        v3_fetcherPersist: true,
-        v3_relativeSplatPath: true,
-        v3_throwAbortReason: true,
-        v3_singleFetch: true,
-        v3_lazyRouteDiscovery: true,
-      },
-    }),
-    tsconfigPaths(),
   ],
+  ssr: {
+    noExternal: []
+  },
+  build: {
+    commonjsOptions: {
+      transformMixedEsModules: true // for Vite to handle mixed ESM + CSJ modules in the app
+    }
+  }
 });

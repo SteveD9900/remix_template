@@ -1,0 +1,17 @@
+{
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "[scss]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "scss.format.spaceAroundSelectorSeparator": true,
+    "scss.format.maxPreserveNewLines": 2,
+    "scss.lint.important": "warning",
+    "scss.lint.duplicateProperties": "warning",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}
